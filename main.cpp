@@ -11,7 +11,7 @@ int main()
     string str;
     vector<vector<string> > tree;
     cout << "Hello world!" << endl;
-    ifstream ifs("./model.mdl", ios::text);
+    ifstream ifs("./model.mdl", ios::binary);
     copy(istream_iterator<unsigned char>(ifs),
          istream_iterator<unsigned char>(),
          back_inserter(str) );
